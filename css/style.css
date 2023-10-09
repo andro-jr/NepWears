@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.b {
+  border: 2px solid red; }
+
+.header-top {
+  background: #ec2578; }
+  .header-top .header-top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.header-bottom-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; }

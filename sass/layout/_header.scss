@@ -1,0 +1,16 @@
+.header-top {
+    background: $color-primary;
+
+    .header-top-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header-bottom-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
