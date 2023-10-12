@@ -1,0 +1,32 @@
+.primary-button {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 1.5rem 2.8rem;
+    font-size: 2rem;
+    border-radius: 35px;
+    background: linear-gradient(120deg, rgba(236, 37, 120, 1), rgba(106, 47, 143, 1), rgba(0, 167, 210, 1));
+    // background: linear-gradient(120deg, darkmagenta, crimson, orange);
+    background-size: 200% 100%;
+    background-position: 0 100%;
+    transition: background-position .5s;
+}
+
+.primary-button:hover {
+    color: white;
+    background-position: 100% 0;
+}
+
+@keyframes animateButton {
+    0% {
+        background-position: 0% 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 50% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

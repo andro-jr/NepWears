@@ -25,7 +25,16 @@ html {
     }
 }
 
+body {
+    overflow-x: hidden;
+    font-family: 'Gabarito', sans-serif;
+}
+
 img {
     display: block;
     max-width: 100%;
+}
+
+p {
+    margin-bottom: 0;
 }

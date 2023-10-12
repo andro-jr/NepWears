@@ -1,16 +1,86 @@
-.header-top {
-    background: $color-primary;
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    background: white;
 
-    .header-top-box {
+    .header-top {
+        background: $color-primary;
+
+        .header-top-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+
+            .header-contact {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 22px;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    color: white;
+                }
+            }
+
+            .header-socials {
+                display: flex;
+                gap: 5px;
+
+                .header-social {
+                    color: $color-primary;
+                    font-size: 1.6rem;
+                    background-color: white;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .header-bottom-box {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-}
+        padding: 2rem 0;
+        width: 100%;
 
-.header-bottom-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
+
+        .nav-items {
+            display: flex;
+            gap: 2rem;
+
+            .nav-item {
+                a {
+                    text-decoration: none;
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                    color: black;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            .header-action {
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
 }
