@@ -17,16 +17,24 @@
     background-position: 100% 0;
 }
 
-@keyframes animateButton {
-    0% {
-        background-position: 0% 50% 50%;
+.arrow-link {
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+
+    i {
+        font-size: 1.6rem;
     }
 
-    50% {
-        background-position: 100% 50% 100%;
-    }
+    &:hover {
+        color: $color-secondary;
+        transition: all 0.3s;
 
-    100% {
-        background-position: 0% 50%;
+        i {
+            animation: arrowMove 0.3s ease infinite alternate;
+        }
+
     }
 }

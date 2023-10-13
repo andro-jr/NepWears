@@ -15,6 +15,18 @@
                     align-items: end;
                     width: 50%;
                     padding-bottom: 15rem;
+
+                    .hero-primary-head {
+                        color: $color-black;
+                    }
+
+                    .hero-secondary-head {
+                        color: $color-shaded-gray;
+                    }
+
+                    .hero-tertiary-paragraph {
+                        color: $color-light-black;
+                    }
                 }
 
                 a {

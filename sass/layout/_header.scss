@@ -6,12 +6,18 @@ header {
     background: white;
 
     .header-top {
-        background: $color-primary;
+        // background: $color-primary;
+        max-height: 300px;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+
+
 
         .header-top-box {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid $color-almost-white;
             padding: 5px;
 
             .header-contact {
@@ -21,11 +27,12 @@ header {
 
                 img {
                     width: 22px;
+                    filter: brightness(0) saturate(100%) invert(22%) sepia(70%) saturate(3909%) hue-rotate(322deg) brightness(97%) contrast(90%);
                 }
 
                 p {
                     font-size: 1.6rem;
-                    color: white;
+                    color: $color-shaded-gray;
                 }
             }
 
