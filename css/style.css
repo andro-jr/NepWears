@@ -41,7 +41,13 @@ p {
 .secondary-heading {
   font-size: 2.6rem;
   letter-spacing: 0.5px;
-  font-weight: 400; }
+  font-weight: lighter; }
+
+.tertiary-heading {
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  font-weight: lighter;
+  color: #666666; }
 
 .tertiary-paragraph {
   font-size: 2rem;
@@ -61,7 +67,8 @@ p {
 .title-heading {
   font-size: 3.2rem;
   letter-spacing: 0.5rem;
-  position: relative; }
+  position: relative;
+  text-transform: uppercase; }
   .title-heading::after {
     content: '';
     position: absolute;
@@ -71,6 +78,35 @@ p {
     left: 0;
     height: 2px;
     border-radius: 10px; }
+  .title-heading.newsletter-heading {
+    text-align: center; }
+    .title-heading.newsletter-heading::after {
+      display: none; }
+
+.display-tag {
+  font-size: 1.8rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem; }
+
+.display-title {
+  font-size: 5.4rem;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  margin-bottom: 2rem; }
+
+.display-text {
+  font-size: 1.8rem;
+  color: #dddddd;
+  letter-spacing: 0.3px; }
+
+.footer-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  color: #666666;
+  font-weight: lighter; }
 
 .b {
   border: 2px solid red; }
@@ -97,7 +133,8 @@ p {
   background: linear-gradient(120deg, #ec2578, #6a2f8f, #00a7d2);
   background-size: 200% 100%;
   background-position: 0 100%;
-  transition: background-position .5s; }
+  transition: background-position .5s;
+  border: none; }
 
 .primary-button:hover {
   color: white;
@@ -109,6 +146,10 @@ p {
   font-size: 2rem;
   display: inline-block;
   margin-top: 1rem; }
+  .arrow-link.arrow-link-alternate {
+    color: #00a7d2; }
+    .arrow-link.arrow-link-alternate:hover {
+      color: #ec2578; }
   .arrow-link i {
     font-size: 1.6rem; }
   .arrow-link:hover {
@@ -151,14 +192,24 @@ p {
       letter-spacing: 1px;
       text-transform: uppercase; }
     .product-row .product-card .product-title {
-      font-size: 2rem;
+      font-size: 1.8rem;
       letter-spacing: 1px;
-      color: #111111; }
+      color: #111111;
+      font-weight: lighter; }
     .product-row .product-card .product-price {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       color: #333333;
       letter-spacing: 0.5px;
-      color: #6a2f8f; }
+      color: #111111;
+      font-weight: bold; }
+
+.form-text-input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #666666;
+  width: 100%;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px; }
 
 header {
   position: fixed;
@@ -210,10 +261,10 @@ header {
       gap: 2rem; }
       header .header-bottom-box .nav-items .nav-item a {
         text-decoration: none;
-        font-size: 1.8rem;
-        text-decoration: none;
+        font-size: 1.6rem;
         color: black;
-        letter-spacing: 0.5px; }
+        letter-spacing: 0.5px;
+        text-transform: uppercase; }
     header .header-bottom-box .header-actions {
       display: flex;
       gap: 2rem;
@@ -246,6 +297,55 @@ header {
     height: 100%;
     object-fit: cover;
     z-index: -1; }
+
+.newsletter-box {
+  text-align: center; }
+  .newsletter-box .newsletter-form-group {
+    display: flex;
+    width: 100%; }
+  .newsletter-box .newsletter-form {
+    max-width: 420px;
+    margin: auto;
+    margin-top: 5rem; }
+
+footer {
+  background: #eeeeee; }
+  footer .footer-container {
+    padding: 7rem 0; }
+    footer .footer-container .footer-box {
+      padding: 0 5rem; }
+      footer .footer-container .footer-box.footer-brand-desc {
+        border-right: 2px solid #666666;
+        padding-left: 0; }
+      footer .footer-container .footer-box:not(:first-child) {
+        padding-right: 5rem; }
+      footer .footer-container .footer-box .footer-logo {
+        width: 50px; }
+      footer .footer-container .footer-box .footer-socials {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem; }
+        footer .footer-container .footer-box .footer-socials i {
+          font-size: 1.8rem;
+          color: #ec2578; }
+      footer .footer-container .footer-box .footer-head {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        color: #333333; }
+      footer .footer-container .footer-box .footer-items {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 2rem; }
+        footer .footer-container .footer-box .footer-items li {
+          margin-bottom: 2px; }
+          footer .footer-container .footer-box .footer-items li a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #111111;
+            letter-spacing: 0.3px;
+            transition: all 0.3s; }
+            footer .footer-container .footer-box .footer-items li a:hover {
+              color: #ec2578; }
 
 .service-box {
   display: flex;
@@ -284,3 +384,20 @@ header {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, white 5%, rgba(0, 0, 0, 0) 90%); }
+
+.display-container {
+  display: flex;
+  height: 600px; }
+  .display-container .display-box-details {
+    flex-basis: 40%;
+    background: #6a2f8f;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .display-container .display-box-image {
+    flex: 1; }
+    .display-container .display-box-image img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover; }

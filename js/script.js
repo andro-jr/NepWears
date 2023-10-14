@@ -1,6 +1,7 @@
 "use strict";
 
 const headerTop = document.querySelector(".header-top");
+const parallexImg = document.querySelector("#parallexImg");
 
 // SLick slider settings
 $(document).ready(function () {
@@ -29,3 +30,13 @@ window.addEventListener(
   },
   false
 );
+
+function parallax() {
+  window.onscroll = function () {
+    var speed = 4.0;
+    parallexImg.style.backgroundPosition =
+      -window.scrollX / speed + "px " + -window.scrollY / speed + "px";
+  };
+}
+
+parallax();

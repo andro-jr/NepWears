@@ -10,6 +10,7 @@
     background-size: 200% 100%;
     background-position: 0 100%;
     transition: background-position .5s;
+    border: none;
 }
 
 .primary-button:hover {
@@ -23,6 +24,15 @@
     font-size: 2rem;
     display: inline-block;
     margin-top: 1rem;
+
+    &.arrow-link-alternate {
+        color: $color-secondary;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+    }
 
     i {
         font-size: 1.6rem;

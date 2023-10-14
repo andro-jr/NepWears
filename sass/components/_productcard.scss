@@ -45,16 +45,18 @@
         }
 
         .product-title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             letter-spacing: 1px;
             color: $color-black;
+            font-weight: lighter;
         }
 
         .product-price {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: $color-light-black;
             letter-spacing: 0.5px;
-            color: $color-tertiary;
+            color: $color-black;
+            font-weight: bold;
         }
     }
 

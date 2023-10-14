@@ -1,0 +1,14 @@
+.newsletter-box {
+    text-align: center;
+
+    .newsletter-form-group {
+        display: flex;
+        width: 100%;
+    }
+
+    .newsletter-form {
+        max-width: 420px;
+        margin: auto;
+        margin-top: 5rem;
+    }
+}
