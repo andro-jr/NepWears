@@ -31,3 +31,7 @@
         ; //1800
     }
 }
+
+@mixin primaryGradient {
+    background: linear-gradient(90deg, $color-primary, $color-secondary);
+}
